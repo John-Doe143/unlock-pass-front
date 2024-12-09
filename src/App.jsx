@@ -19,7 +19,7 @@ const App = () => {
     try {
       // Send request to the back-end to decrypt the password
       const response = await axios.post(
-        "http://localhost:5000/api/decrypt-password",
+        "https://unlock-pass-back.vercel.app/api/decrypt-password", 
         {
           encryptedPassword,
           iv,
